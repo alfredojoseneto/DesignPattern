@@ -16,6 +16,7 @@ public enum SingletonEnumChocolateFactory {
 	}
 
 	public void fill() {
+		System.out.println("The container was filled");
 		if (this.isEmpty()) {
 			this.empty = false;
 			this.boiled = false;
@@ -23,12 +24,14 @@ public enum SingletonEnumChocolateFactory {
 	}
 
 	public void boil() {
+		System.out.println("The container content was boiled");
 		if (!this.isEmpty() && !this.isBoiled()) {
 			this.boiled = true;
 		}
 	}
 
 	public void drain() {
+		System.out.println("The container was emptied and the content is already boiled and finished");
 		if (!this.isEmpty() && this.isBoiled()) {
 			this.empty = false;
 		}
