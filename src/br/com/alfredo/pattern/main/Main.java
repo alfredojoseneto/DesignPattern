@@ -1,5 +1,5 @@
-package br.com.alfredo.designpattern.main;
-import br.com.alfredo.designpattern.core.Singleton;
+package br.com.alfredo.pattern.main;
+import br.com.alfredo.pattern.singleton.Singleton;
 
 public class Main {
 

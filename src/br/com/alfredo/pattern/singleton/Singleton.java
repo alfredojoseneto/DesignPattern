@@ -1,4 +1,4 @@
-package br.com.alfredo.designpattern.core;
+package br.com.alfredo.pattern.singleton;
 
 public class Singleton {
 	
