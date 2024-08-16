@@ -1,15 +1,23 @@
 package br.com.alfredo.pattern.main;
-import br.com.alfredo.pattern.singleton.Singleton;
+import br.com.alfredo.pattern.singleton.*;
 
 public class Main {
 
 	public static void main(String[] args) {
-		Singleton firstSingletonInstance = Singleton.getInstance();
+//		Singleton firstSingletonInstance = Singleton.getInstance();
+//		
+//		firstSingletonInstance.printSomething("First instance");
+//		
+//		Singleton seccondSingletonInstance = Singleton.getInstance();
+//		seccondSingletonInstance.printSomething("Seccond instance");
+		SingletonEnumChocolateFactory chocFactory = SingletonEnumChocolateFactory.INSTANCE;
 		
-		firstSingletonInstance.printSomething("First instance");
-		
-		Singleton seccondSingletonInstance = Singleton.getInstance();
-		seccondSingletonInstance.printSomething("Seccond instance");
+
+		chocFactory.setContainerNumber(1);
+
+		chocFactory.fill();
+		chocFactory.boil();
+		chocFactory.drain();
 	}
 	
 }
